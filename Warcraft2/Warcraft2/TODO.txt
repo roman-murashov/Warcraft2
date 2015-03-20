@@ -1,0 +1,36 @@
+﻿-----Textures-----
+-Buildings-
+Human and Orc
+Summer and Winter versions for both
+Icons based on building progress - Maybe use percentage of number of given images excluding last one, which is only shown at 100%. Do all buildings use standard small piles for first stages?
+How to get them based on tileset, with the same name? "blacksmith" or whatever we are naming it, should return summer or winter version
+In progress building images - Small pile, medium, large, buildingType specifics
+
+-Units-
+Units have up/upright/right/downright/down texture, we need to flip those textures for downleft/left/leftup
+death images seem to be only 2 directions for corpses, 
+some units have special images based on state - peasents have chopping, carrying gold, carrying wood, Use state? How without class specific properties? Generic unit class doe?
+
+
+Trees
+A tree cannot be 1x1, If you chop a tree into a 1x1, it also gets removed
+TREE Function - Should find all the trees in the area, and change their type to look aesthetically correct, IE, there is grass above me, I should be a top of a tree
+
+
+
+Slowest: 1000ms/s ÷ 167ms/frame = 5.99 FPS
+Slower: 1000ms/s ÷ 111ms/frame = 9.01 FPS
+Slow: 1000ms/s ÷ 83ms/frame = 12.05 FPS
+Normal: 1000ms/s ÷ 67ms/frame = 14.93 FPS
+Fast: 1000ms/s ÷ 56ms/frame = 17.86 FPS
+Faster: 1000ms/s ÷ 48ms/frame = 20.83 FPS
+Fastest: 1000ms/s ÷ 42ms/frame = 23.81 FPS
+
+
+Selecting units
+Instead of sending all the ids of the selected units,
+send the selection box the player makes
+then call the actions on that, also figure out hot key aswell for that ctrl - 1
+
+BETTER WAY OF MAKING THE TILESHEETS WORK, Display the entire sheet, figure out have buttons that control, How many frames are in this animation? How many directions? how wide? how long? allow offsettings entire group
+GOAL is to be able to do an entire sheet for a new unit in a minute or two. Because we have a lot of sheets of units. Ideally use this for buildings aswell somehow? Though maybe do those individually
