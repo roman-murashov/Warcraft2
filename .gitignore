@@ -1,5 +1,5 @@
-*/bin/*
-*/obj/*
+Warcraft2/*/bin/*
+Warcraft2/*/obj/*
 *.lnk
 *.sln
 *.suo
